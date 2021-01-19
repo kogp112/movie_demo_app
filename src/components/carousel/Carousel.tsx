@@ -35,16 +35,17 @@ type LatestData = {
 }
 
 function CarouselData(prop: Props) {
-  console.log(prop);
   let data = prop.data;
     return (
-          <Carousel className={styles.carousel} showDots={false} arrows swipeable responsive={responsive} infinite={false}>
-            {data.length > 0 && data.map(item => {
-              return (
-                <CardData title={item.title} overview={item.overview} poster_path={item.poster_path}/>
-              )
-            })}
-          </Carousel>
+        <Carousel containerClass={styles.carouselContainer} itemClass={styles.carouselItem} showDots={false} arrows swipeable responsive={responsive} infinite={false}>
+          {data.length > 0 && data.map(item => {
+            return (
+              <>
+                <CardData id={item.id} title={item.title} overview={item.overview} poster_path={item.poster_path}/>
+              </>
+            )
+          })}
+        </Carousel>
     );
 }
 
