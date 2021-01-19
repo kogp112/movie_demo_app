@@ -70,7 +70,6 @@ function Detail(props: Props) {
       } else {
         setLikeMode(true);
         myStorage.setItem("movie" + movieId, JSON.stringify(movieData));
-        console.log(myStorage);
       }
     }
     
