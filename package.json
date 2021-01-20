@@ -49,6 +49,7 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.7",
-    "react-scrolltop-button": "^0.1.6"
+    "react-scrolltop-button": "^0.1.6",
+    "react-test-renderer": "^17.0.1"
   }
 }

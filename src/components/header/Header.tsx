@@ -1,3 +1,4 @@
+import * as React from 'react'
 import logo from "../../assets/images/movu_logo.svg";
 import styles from "./Header.module.scss";
 import { Link } from "react-router-dom";

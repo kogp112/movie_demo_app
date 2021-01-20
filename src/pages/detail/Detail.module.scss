@@ -1,5 +1,6 @@
 .main {
   text-align: center;
+  padding-top: 30px;
 }
 
 .image {
@@ -10,14 +11,29 @@
   font-size: large;
 }
 
-.overwrite {
-  font-size: small;
-}
-
 .like {
   color: red;
 }
 
 .unlike {
   color: blue;
+}
+
+.overViewText {
+  width: 300px;
+  font-size: small;
+  padding-left: 30px;
+  padding-top: 30px;
+  vertical-align:top;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.detailTable {
+  text-align: center;
+  display: inline-block;
+}
+
+.tableCol {
+  height: 30px;
 }
