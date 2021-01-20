@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail should change like button color when favorite button clicked 1`] = `null`;

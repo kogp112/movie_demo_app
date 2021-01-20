@@ -74,34 +74,34 @@ function Detail(props: Props) {
     }
     
     return (
-      <>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <img className={styles.image} src={imgSrc} />
-            </td>
+      <div className={styles.main}>
+        <table className={styles.detailTable}>
+          <tbody>
             <tr>
-              <td>
-                <p>{titleText}</p>
+              <td rowSpan={4}>
+                <img className={styles.image} src={imgSrc} />
               </td>
             </tr>
             <tr>
-              <td>
+                <td className={styles.tableCol}>
+                  <p className={styles.title}>{titleText}</p>
+                </td>
+            </tr>
+            <tr>
+              <td className={styles.tableCol}>
                 <Button variant={likeMode ? 'danger': 'primary'} onClick={onClickLikeButton}>
                   {likeMode ? "Unlike" : "Like"}
                 </Button>
               </td>
             </tr>
             <tr>
-              <td>
+              <td className={styles.overViewText}>
                 <p>{overviewText}</p>
               </td>
             </tr>
-          </tr>
-        </tbody>
-      </table>
-      </>
+          </tbody>
+        </table>
+      </div>
     );
 }
 
